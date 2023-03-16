@@ -1,9 +1,9 @@
 {
     "firefox": {
-      "default": "110.0",
+      "default": "109.0",
       "versions": {
-        "110.0": {
-          "image": "selenoid/firefox:110.0",
+        "109.0": {
+          "image": "selenoid/vnc_firefox:109.0",
           "port": "4444",
           "tmpfs": {"/tmp": "size=512m"},
           "path" : "/wd/hub",
@@ -12,7 +12,7 @@
           "hosts" : ["example.com:0.0.0.0"],
           "shmSize" : 268435456,
           "cpu" : "1.0",
-          "mem" : "512m"
+          "mem" : "1024m"
         }
       }
     },
@@ -20,10 +20,10 @@
         "default": "110.0",
       "versions": {
         "110.0": {
-          "image": "selenoid/chrome:110.0",
+          "image": "selenoid/vnc_chrome:110.0",
           "port": "4444",
           "tmpfs": {"/tmp": "size=512m"},
-          "path" : "/wd/hub",
+          "path" : "/",
           "volumes" : ["/from:/to:ro"],
           "env" : ["TZ=America/Sao_Paulo"],
           "hosts" : ["example.com:0.0.0.0"],

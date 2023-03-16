@@ -1,13 +1,18 @@
-version: '3'
+version: '1'
 services:
   selenoid:
     image: "aerokube/selenoid"
+    command: -listen :4444 -conf /etc/selenoid/browsers.json -log-output-dir /opt/selenoid/logs -timeout 3m -limit 20
     network_mode: bridge
     ports:
       - "4444:4444"
     volumes:
       - "$PWD:/etc/selenoid/" # assumed current dir contains browsers.json
       - "/var/run/docker.sock:/var/run/docker.sock"
+      - "$PWD/results/video:/opt/selenoid/video/"
+      - "$PWD/results/logs:/opt/selenoid/logs/"
+    environment:
+      - "OVERRIDE_VIDEO_OUTPUT_DIR=$PWD/results/video"
   selenoid-ui:
     image: "aerokube/selenoid-ui"
     network_mode: bridge
@@ -16,3 +21,9 @@ services:
     ports:
       - "8080:8080"
     command: ["--selenoid-uri", "http://selenoid:4444"]
+  video-recorder:
+    image: "selenoid/video-recorder:latest-release"
+  chrome:
+    image: "selenoid/vnc_chrome:110.0"
+  firefox:
+    image: "selenoid/vnc_firefox:109.0"
