@@ -2,7 +2,7 @@ version: '1'
 services:
   selenoid:
     image: "aerokube/selenoid"
-    command: -listen :4444 -conf /etc/selenoid/browsers.json -log-output-dir /opt/selenoid/logs -timeout 3m -limit 20
+    command: -listen :4444 -conf /etc/selenoid/browsers.json -log-output-dir /opt/selenoid/logs -timeout 3m -limit 4
     network_mode: bridge
     ports:
       - "4444:4444"
@@ -21,9 +21,9 @@ services:
     ports:
       - "8080:8080"
     command: ["--selenoid-uri", "http://selenoid:4444"]
-  video-recorder:
-    image: "selenoid/video-recorder:latest-release"
   chrome:
     image: "selenoid/vnc_chrome:110.0"
   firefox:
-    image: "selenoid/vnc_firefox:109.0"
+    image: "selenoid/vnc_firefox:110.0"
+  video-recorder:
+    image: "selenoid/video-recorder:latest-release"
