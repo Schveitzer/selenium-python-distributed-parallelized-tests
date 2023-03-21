@@ -1,4 +1,0 @@
-"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"failed","Tue Mar 21 11:13:20 BRT 2023","Tue Mar 21 11:13:24 BRT 2023","4299","","test_sauce_demo","TestSauceDemo","","","test_add_product_backpack[chrome]",""
-"passed","Tue Mar 21 11:13:27 BRT 2023","Tue Mar 21 11:13:32 BRT 2023","4748","","test_sauce_demo","TestSauceDemo","","","test_remove_product_backpack[chrome]",""
-"passed","Tue Mar 21 11:13:13 BRT 2023","Tue Mar 21 11:13:17 BRT 2023","4329","","test_sauce_demo","TestSauceDemo","","","test_login_in_sauce_demo[chrome]",""
