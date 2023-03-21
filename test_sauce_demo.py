@@ -26,7 +26,7 @@ class TestSauceDemo:
         self.add_to_cart_backpack_button.click()
         self.shop_cart_button = browser.find_element(By.CLASS_NAME, "shopping_cart_link")
         self.shop_cart_button.click()
-        assert "Sauce Labs Backpack" in browser.page_source
+        assert "Alan" in browser.page_source
 
     def test_remove_product_backpack(self, browser):
         browser.get("https://www.saucedemo.com/")

@@ -3,7 +3,10 @@ __pycache__/
 *.py[cod]
 *$py.class
 venv/
-results/
+results/log/*
+results/video/*
+results/alurre_report/*
+results/alurre_result/*
 
 # C extensions
 *.so
@@ -107,10 +110,10 @@ celerybeat.pid
 .env
 .venv
 env/
-venv/
 ENV/
 env.bak/
 venv.bak/
+
 
 # Spyder project settings
 .spyderproject
@@ -129,3 +132,4 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+failures
