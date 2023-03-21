@@ -84,9 +84,9 @@ $ pytest -vv -q --browser_name="local" --alluredir=results/allure_report
 
 ## To run tests in parallel mode:
 To run more than one test simultaneously, just add the **-n** parameter informing the maximum number of tests to be run simultaneously, the maximum possible number is limited by the number of threads that the processor has to run the tests.
-For example to run 2 tests at the same time:
+For example to run 2 tests at the same time in chrome and firefox:
 ```bash
-$ pytest -n2 -vv -q --browser_name="firefox" --alluredir=results/allure_report
+$ pytest -n2 -vv -q --browser_name="chrome" -q --browser_name="firefox" --alluredir=results/allure_report
 ```
 
 ## Enabling video record (Run only in selenoid):
