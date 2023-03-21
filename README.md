@@ -44,6 +44,7 @@ $ pip3 install --no-cache-dir -r requirements.txt
 ```bash
 $ docker-compose up
 ```
+##OR
 
 ## Start Selenium Grid Server:
 ```bash
