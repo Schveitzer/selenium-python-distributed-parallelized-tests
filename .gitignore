@@ -7,6 +7,8 @@ results/log/*
 results/video/*
 results/alurre_report/*
 results/alurre_result/*
+.idea
+.DS_Store
 
 # C extensions
 *.so
