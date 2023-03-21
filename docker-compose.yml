@@ -2,7 +2,7 @@ version: '1'
 services:
   selenoid:
     image: "aerokube/selenoid"
-    command: -listen :4444 -conf /etc/selenoid/browsers.json -log-output-dir /opt/selenoid/logs -timeout 3m -limit 4
+    command: -listen :4444 -conf /etc/selenoid/browsers.json -log-output-dir /opt/selenoid/logs -timeout 2m -limit 10
     network_mode: bridge
     ports:
       - "4444:4444"

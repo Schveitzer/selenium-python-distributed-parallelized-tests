@@ -1,0 +1,7 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Tue Mar 21 14:15:41 BRT 2023","Tue Mar 21 14:15:45 BRT 2023","4452","tests","test_sauce_demo","TestSauceDemo","","","test_login_in_sauce_demo[chrome]",""
+"passed","Tue Mar 21 14:16:45 BRT 2023","Tue Mar 21 14:16:51 BRT 2023","6172","tests","test_sauce_demo","TestSauceDemo","","","test_remove_product_backpack[firefox]",""
+"passed","Tue Mar 21 14:16:04 BRT 2023","Tue Mar 21 14:16:10 BRT 2023","5088","tests","test_sauce_demo","TestSauceDemo","","","test_add_product_backpack[chrome]",""
+"passed","Tue Mar 21 14:16:30 BRT 2023","Tue Mar 21 14:16:36 BRT 2023","5814","tests","test_sauce_demo","TestSauceDemo","","","test_remove_product_backpack[chrome]",""
+"passed","Tue Mar 21 14:16:18 BRT 2023","Tue Mar 21 14:16:25 BRT 2023","6128","tests","test_sauce_demo","TestSauceDemo","","","test_add_product_backpack[firefox]",""
+"passed","Tue Mar 21 14:15:53 BRT 2023","Tue Mar 21 14:15:59 BRT 2023","5227","tests","test_sauce_demo","TestSauceDemo","","","test_login_in_sauce_demo[firefox]",""
