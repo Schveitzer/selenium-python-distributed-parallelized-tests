@@ -18,8 +18,8 @@ This project includes:
     - Distributed tests over different browsers
     - Parallelized tests
     - Screenshot on fail testes
-    - Remove vitalization with Selenoid UI ou Selenium Grid 4
-    - Record video opf tests
+    - Visualization the execution of tests with Selenoid UI or Selenium Grid 4
+    - Record video of tests
     - Pytest fixtures and parametrize
     - Use docker for infrastructure
     - Report with Allure
