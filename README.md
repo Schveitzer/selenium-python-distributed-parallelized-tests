@@ -34,6 +34,13 @@ For these tests I use a Sauce Labs demo app which can be found here: [Sauce Demo
 - Allure Cliente >= 2.21 [How install allure client](https://docs.qameta.io/allure/#_commandline)
 
 ## Getting Started
+Creat a virtual environment:
+
+```bash
+$ python -m venv venv
+$ source venv/bin/activate
+```
+
 Install dependencies:
 
 ```bash
