@@ -60,7 +60,7 @@ $ docker-compose -f docker-compose-selenium-grid.yml up
 
 ## Selenoid or Selenium grid UI:
 
-After started the Selenoid or Selenium Grid service, it is possible to manage and view the test sections, just access the address in the browser:
+After started the Selenoid or Selenium Grid service, it is possible to manage and view the test sessions, just access the address in the browser:
 > Selenoid: http://localhost:8080/#/
 
 ![Run Img](img/selenoidrun.gif)
