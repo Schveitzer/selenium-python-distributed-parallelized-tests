@@ -55,7 +55,7 @@ def pytest_generate_tests(metafunc):
     if "browser_name" in metafunc.fixturenames:
         metafunc.parametrize("browser_name", metafunc.config.getoption("browser_name"))
 
-
+# it is this function that takes the screenshot in case of failures
 @pytest.hookimpl(tryfirst=True, hookwrapper=True)
 def pytest_runtest_makereport(item, call):
     outcome = yield
